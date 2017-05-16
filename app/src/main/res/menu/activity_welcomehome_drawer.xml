@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_mainn">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/PersonalBio"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Personal Bio" />
+
+        <item
+            android:id="@+id/nav_ice"
+            android:icon="@drawable/ic_call"
+            android:title="Emergency Contact" />
+
+        <item
+            android:id="@+id/nav_show_ice"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Show Emergency" />
+
+
+    </group>
+
+
+
+</menu>

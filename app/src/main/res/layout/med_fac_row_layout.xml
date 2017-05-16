@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    >
+
+    <LinearLayout android:id="@+id/Text"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip">
+
+        <TextView
+            android:id="@+id/tv_catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7F3300"
+            android:textSize="20dip"
+            android:textStyle="italic"
+            />
+        <TextView
+            android:id="@+id/tv_catCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7F3300"
+            android:textSize="14dip"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:id="@+id/tv_catDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dip"
+            android:textColor="#FF267F00"
+            android:paddingLeft="100dip"
+            />
+        <TextView
+            android:id="@+id/tv_catReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dip"
+            android:paddingLeft="100dip"
+            />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="25dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/btn_update"
+            android:textColor="@android:color/white"
+            android:layout_weight="1.85" />
+    </LinearLayout>
+
+</RelativeLayout>

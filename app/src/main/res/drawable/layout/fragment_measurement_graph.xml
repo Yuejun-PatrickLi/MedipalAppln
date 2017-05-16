@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context="iss.nus.edu.medipalappln.fragment.MainMeasurementFragment"
+    android:background="@color/bg_main">
+
+    <ScrollView
+        android:id="@+id/scoll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_blood_pressure"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph_bp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/text_view_pulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pulse"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph_pulse"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/text_view_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_temperature"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/text_view_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_weight"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph_weight"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/btn_show_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show all"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:background="@drawable/side_nav_bar"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

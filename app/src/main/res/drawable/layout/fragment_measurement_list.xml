@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="iss.nus.edu.medipalappln.fragment.ViewBloodPressureFragment"
+    android:background="@color/bg_main">
+
+    <RelativeLayout
+        android:id="@+id/layout_filter"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/btn_start_date"
+            android:layout_marginStart="28dp"
+            android:hint="Start Date"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_end_date"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_date_range"
+            android:minWidth="25dp"
+            android:minHeight="25dp"/>
+
+        <TextView
+            android:id="@+id/text_view_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/text_view_start_date"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/text_view_start_date"
+            android:hint="End Date"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn_start_date"
+            android:layout_alignTop="@+id/text_view_end_date"
+            android:background="@drawable/ic_date_range"
+            android:minWidth="25dp"
+            android:minHeight="25dp"/>
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/button_filter"
+            android:textColor="@android:color/white"
+            android:background="@drawable/side_nav_bar"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_filter"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/bg_screen1" />
+
+        <ListView
+            android:id="@+id/list_view_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_header"
+            >
+        </ListView>
+
+        <TextView
+            android:id="@+id/text_view_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_view_measured_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_alignBottom="@+id/button_edit" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_edit"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button_delete" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_delete"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_view_col2"
+        android:layout_below="@+id/text_view_measured_on"
+        android:layout_marginTop="62dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/blood"
+        android:layout_below="@+id/blood"
+        android:layout_marginTop="43dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_view_measured_on"
+        android:layout_alignTop="@+id/blood"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignStart="@+id/Dob"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phone"
+        android:layout_centerVertical="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignStart="@+id/height" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/height"
+        android:layout_marginEnd="14dp"
+        android:text="TextView" />
+</RelativeLayout>
+</RelativeLayout>

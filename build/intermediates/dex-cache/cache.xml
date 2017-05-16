@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\sg4101-OO-Programming-CA\teams-code\final\medipalappln\app\libs\GraphView-4.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3626a38455159707e355da96a61e598fbbc049e9">
+        <dex dex="E:\sg4101-OO-Programming-CA\teams-code\final\medipalappln\app\build\intermediates\transforms\dex\debug\folders\1000\2\GraphView-4.2.1_105a1a5234bb0aa5162b963c1176531b20de66cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\sg4101-OO-Programming-CA\teams-code\final\medipalappln\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00ae7c5258fc409d5be445cd3573b9d53c3aefdb">
+        <dex dex="E:\sg4101-OO-Programming-CA\teams-code\final\medipalappln\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ac2d4552a0942f47fea417878309ab62a3da159e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\sg4101-OO-Programming-CA\teams-code\final\medipalappln\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="E:\sg4101-OO-Programming-CA\teams-code\final\medipalappln\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_94d3f96173bd11d740c23ba5fee5060b4d8d1f9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP\.android\build-cache\799e1bef84f7b0c5590edc76ba47da545caf892a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="E:\sg4101-OO-Programming-CA\teams-code\final\medipalappln\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_13eae9afaf8f2784f0b7bd98f0b9aab3dd515113\classes.dex" />
+    </item>
+
+</items>

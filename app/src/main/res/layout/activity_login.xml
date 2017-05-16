@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:baselineAligned="false"
+    android:background="@color/bg_screen1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_registration" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_blue_health" />
+
+
+        <!--<EditText-->
+            <!--android:id="@+id/name"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:hint="Name"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:layout_below="@+id/imageView2"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_weight="0.18" />-->
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#f3f3f3"
+            android:freezesText="true"
+            android:hint="Name"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:hint="Dob"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            />
+
+        <Button
+            android:id="@+id/dob_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:background="@drawable/side_nav_bar"
+            android:elevation="0dp"
+            android:text="Date"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/Bloodtype"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#f3f3f3"
+            android:freezesText="true"
+            android:hint="BloodType"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/Height"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="#f3f3f3"
+            android:freezesText="true"
+            android:hint="Height"
+            android:inputType="number"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="#f3f3f3"
+            android:freezesText="true"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/postalcode"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="#f3f3f3"
+            android:freezesText="true"
+            android:hint="Postal Code"
+            android:inputType="numberSigned"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/nric"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="#f3f3f3"
+            android:hint="NRIC or Passport Number"
+            android:inputType="text"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/side_nav_bar"
+            android:elevation="0dp"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+</ScrollView>
+

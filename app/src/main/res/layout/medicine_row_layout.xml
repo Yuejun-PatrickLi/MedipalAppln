@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    >
+
+    <LinearLayout
+        android:id="@+id/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dip">
+
+        <TextView
+            android:id="@+id/tv_medId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7F3300"
+            android:textSize="20dip"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_medName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7F3300"
+            android:textSize="20dip"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_medDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_medName"
+            android:textColor="#FF7F3300"
+            android:textSize="14dip"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_medCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_medDesc"
+            android:textColor="#FF267F00"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/tv_medRem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_medDesc"
+            android:textColor="#FF267F00"
+            android:textSize="14dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Text"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip">
+
+        <Button
+            android:id="@+id/btn_med_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_medCode"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="@string/btn_update"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:minWidth="40dp"
+            android:minHeight="25dp"/>
+
+        <Button
+            android:id="@+id/btn_med_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@+id/btn_med_update"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:background="#E53935"
+            android:minWidth="40dp"
+            android:minHeight="25dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

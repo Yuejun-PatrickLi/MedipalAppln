@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#80c8ff</color>
+
+     -->
+    <!-- Screens background -->
+    <color name="textPrimary">#f5f5f5</color>
+    <color name="textPrimaryDark">#95aab4</color>
+    <color name="errorText">#ff7878</color>
+    
+    <!-- Screens background -->
+    <color name="bg_screen1">#a29ecd</color>
+    <color name="bg_screen2">#C58F9D</color>
+    <color name="bg_screen3">#77A8AB</color>
+    <color name="bg_screen4">#e8f2f2</color>
+    <color name="bg_screen5">#cde3e4</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <!-- dots active colors -->
+    <color name="dot_active">#000000</color>
+    <color name="pink">#FFB6C1</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
+
+    <color name="colorPrimary">#5E35B1</color>
+    <color name="colorPrimaryDark">#311B92</color>
+    <color name="colorAccent">#7E57C2</color>
+    <color name="primary_text_material_light">#de242323</color>
+
+
+    <!-- Screens background -->
+    <color name="bg_main">#D1C4E9</color>
+    <color name="bg_mainn">#B39DDB</color>
+    <color name="editorColorPrimary">#5E35B1</color>
+    <color name="editorColorPrimaryDark">#311B92</color>
+</resources>
+
+

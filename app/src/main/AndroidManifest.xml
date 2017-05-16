@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iss.nus.edu.medipalappln">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <user-permission android:name="android.permission.CALL_PHONE"></user-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".medipal.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:debuggable="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.Welcome"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.HelpScreen" />
+        <activity
+            android:name=".FingerPrint.FingerprintActivity"
+            android:label="FingerPrint"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".widgetService.widgetMain" />
+        <activity
+            android:name=".activity.MainMeasurementActivity"
+            android:label="Measurement Management"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activity.Welcome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Welcome" />
+        </activity>
+        <activity
+            android:name=".activity.MainAppointmentActivity"
+            android:label="Appointment Management"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activity.Welcome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Welcome" />
+        </activity>
+        <activity
+            android:name=".activity.MainMedicineActivity"
+            android:label="Medicine Management"
+            android:parentActivityName=".activity.Welcome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Welcome" />
+        </activity>
+        <activity
+            android:name=".activity.AddMedicineActivity"
+            android:theme="@style/EditorTheme"
+            android:label="Add Medicine"
+            android:parentActivityName=".activity.Welcome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Welcome" />
+        </activity>
+
+        <receiver android:name=".Service.NotificationReceiver"/>
+        <receiver android:name=".Service.NotificationCancelReceiver"/>
+        <activity
+            android:name=".activity.UpdateMedicineActivity"
+            android:theme="@style/EditorTheme"
+            android:label="Update Medicine"
+            android:parentActivityName=".activity.Welcome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Welcome" />
+        </activity>
+        <activity
+            android:name=".activity.ConsumptionMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Consumption Management"/>
+        <activity android:name=".activity.AddConsumptionActivity"/>
+       <!-- <activity android:name=".activity.AddReminderActivity"/>-->
+        <activity android:name=".activity.UpdateCategoryActivity"/>
+        <activity android:name=".activity.AddCategoryActivity"/>
+        <!--<activity android:name=".activity.UpdateMedicineActivity"/>-->
+        <activity
+            android:name=".activity.HealthBioCatalogActivity"
+            android:theme="@style/EditorTheme"
+            android:label="@string/action_health_bio"
+            android:parentActivityName=".activity.Welcome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Welcome" />
+        </activity>
+        <activity
+            android:name=".activity.HealthBioEditorActivity"
+            android:theme="@style/EditorTheme"
+            android:parentActivityName=".activity.HealthBioCatalogActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HealthBioCatalogActivity" />
+        </activity>
+        <provider
+            android:name=".dao.HealthBioProvider"
+            android:authorities="iss.nus.edu.medipalappln"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

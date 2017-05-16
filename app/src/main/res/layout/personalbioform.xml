@@ -1,0 +1,161 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="iss.nus.edu.medipalappln.fragment.PersonalBioForm"
+    android:background="@color/bg_mainn"
+    >
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:ignore="ScrollViewSize">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="450dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/MarqueeText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Personal Bio" />
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:background="#f3f3f3"
+                android:freezesText="true"
+                android:hint="Name"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#f3f3f3"
+                android:focusable="false"
+                android:freezesText="true"
+                android:hint="Dob"
+                android:paddingLeft="5dp"
+                 />
+
+            <Button
+                android:id="@+id/dob_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:background="@drawable/side_nav_bar"
+                android:elevation="0dp"
+                android:text="Date"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/Bloodtype"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:background="#f3f3f3"
+                android:freezesText="true"
+                android:hint="BloodType"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/Height"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:freezesText="true"
+                android:hint="Height"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:freezesText="true"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="5dp"
+                android:singleLine="false" />
+
+            <EditText
+                android:id="@+id/postalcode"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:freezesText="true"
+                android:hint="Postal Code"
+                android:inputType="numberSigned"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/nric"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:hint="NRIC or Passport Number"
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/side_nav_bar"
+                android:elevation="0dp"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
